@@ -1,0 +1,17 @@
+f = open("day6.txt", "r")
+data = f.read().strip()
+
+
+testData = "bvwbjplbgvbhsrlpgdmjqwftvncz"
+
+i = 0
+while True:
+    s = testData[i : (i+4)]
+    if len(set(list(s))) == 4:
+        print(i+4)
+        break
+    i += 1
+
+
+
+
